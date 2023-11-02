@@ -6,6 +6,7 @@ import javafx.scene.text.Font;
 
 /**
  * コマンドプロンプトにフォント一覧を表示するクラス
+ * @author komoto
  */
 public class CuiMain {
 
@@ -16,11 +17,11 @@ public class CuiMain {
     public static void main(String[] args) {
         // フォント一覧を取得する
         List<String> fontFamilyList = Font.getFamilies();
-        
+
         // フォント一覧を表示する
         System.out.println("***** フォントファミリー一覧 *****");
-        
-        for(int i = 0; i < fontFamilyList.size(); i++) {
+
+        for (int i = 0; i < fontFamilyList.size(); i++) {
             String font = fontFamilyList.get(i);
             System.out.printf("%3d. %s\n", i + 1, font);
         }
